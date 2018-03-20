@@ -35,5 +35,7 @@ PolymerJS for Intermediate Level
 ### Adding Element
 #### iron-ajax
 > `bower install --save PolymerElements/iron-ajax`
+
+> [Material Design](https://material.io/guidelines/)
 ## Creating Reusable Element
 ## Testing and Publishing a Reusable Element

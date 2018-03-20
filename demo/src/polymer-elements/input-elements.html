@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../bower_components/paper-input/paper-input.html">
+    <title>paper-input</title>
+</head>
+<body>
+    <demo-element></demo-element>
+
+    <dom-module id="demo-element">
+        <tempalte>
+            <paper-input></paper-input>
+            <paper-input label="username"></paper-input>
+            <paper-input label="letters-only" auto-validate pattern="[a-zA-Z]*" error-message="letters-only"></paper-input>
+        </tempalte>
+    </dom-module>
+
+    <script>
+        HTMLImports.whenReady(function() {
+            Polymer({
+                is: "demo-element"
+            })
+        });    
+    </script>
+</body>
+</html>
