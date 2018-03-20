@@ -1,0 +1,17 @@
+{
+  "name": "polymer",
+  "homepage": "https://github.com/reemardelarosa/PolymerJSElements",
+  "authors": [
+    "John Reemar Dela Rosa <jrddelarosa@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
