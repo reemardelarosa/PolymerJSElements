@@ -50,5 +50,8 @@ PolymerJS for Intermediate Level
 #### neon-animation
 > `bower install --save PolymerElements/neon-animation`
 
+#### platinum-sw
+> `bower install --save PolymerElements/platinum-sw`
+
 ## Creating Reusable Element
 ## Testing and Publishing a Reusable Element
