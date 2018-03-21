@@ -56,5 +56,8 @@ PolymerJS for Intermediate Level
 #### molecules
 > `bower install --save PolymerElements/marked-element`
 
+#### app-route
+> `bower install --save PolymerElements/app-route`
+
 ## Creating Reusable Element
 ## Testing and Publishing a Reusable Element

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../bower_components/app-route/app-route.html">
+    <link rel="import" href="../bower_components/app-route/app-location.html">
+
+    <title>app-elements</title>
+</head>
+<body>
+    <test-element></test-element>
+
+    <dom-module id="test-element">
+        <template>
+        <div ng-show="data.page == 'user'">User:{{data.userName}} page: {{data.page}}</div>
+            <app-location route="{{route}}" use-hash-as-path></app-location>
+            <app-route route="{{route}}" pattern=":page/:userName" data="{{data}}" tail="{{tail}}"></app-route>
+        </template>
+    </dom-module>
+
+    <script>
+        HTMLImports.whenReady(function() {
+            Polymer({
+                is: "test-element",
+                properties: {
+                    route: Object,
+                    data: Object,
+                    tail: Object
+                },
+                ready: function() {
+                    console.log("route", this.route);
+                    console.log("data", this.data);
+                    console.log("tail", this.tail);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
