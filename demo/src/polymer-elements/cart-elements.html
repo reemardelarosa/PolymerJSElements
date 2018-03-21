@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../bower_components/gold-cc-input/gold-cc-input.html">
+    <title>cart-elements</title>
+</head>
+<body>
+    <demo-element></demo-element>
+
+    <dom-module id="demo-element">
+        <template>
+            <gold-cc-input label="enter your card" auto-validate></gold-cc-input>
+        </template>
+    </dom-module>
+
+    <script>
+        HTMLImports.whenReady(function() {
+            Polymer({
+                is: "demo-element"
+            });
+        });
+    </script>
+</body>
+</html>

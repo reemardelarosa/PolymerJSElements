@@ -44,5 +44,8 @@ PolymerJS for Intermediate Level
 #### google-map
 > `bower install --save GoogleWebComponents/google-map`
 
+#### gold-cc-input
+> `bower install --save PolymerElements/gold-cc-input`
+
 ## Creating Reusable Element
 ## Testing and Publishing a Reusable Element
