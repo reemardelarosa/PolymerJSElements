@@ -33,9 +33,16 @@ PolymerJS for Intermediate Level
 - [vaadin-core](https://www.webcomponents.org/collection/vaadin/vaadin-core)
 
 ### Adding Element
+> [Material Design](https://material.io/guidelines/)
+
 #### iron-ajax
 > `bower install --save PolymerElements/iron-ajax`
 
-> [Material Design](https://material.io/guidelines/)
+#### paper-input
+> `bower install --save PolymerElements/paper-input`
+
+#### google-map
+> `bower install --save GoogleWebComponents/google-map`
+
 ## Creating Reusable Element
 ## Testing and Publishing a Reusable Element
