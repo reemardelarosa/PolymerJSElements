@@ -53,5 +53,8 @@ PolymerJS for Intermediate Level
 #### platinum-sw
 > `bower install --save PolymerElements/platinum-sw`
 
+#### molecules
+> `bower install --save PolymerElements/marked-element`
+
 ## Creating Reusable Element
 ## Testing and Publishing a Reusable Element

@@ -21,6 +21,7 @@
     "google-map": "GoogleWebComponents/google-map#^2.0.4",
     "gold-cc-input": "PolymerElements/gold-cc-input#^2.1.0",
     "neon-animation": "PolymerElements/neon-animation#^2.2.1",
-    "platinum-sw": "PolymerElements/platinum-sw#^2.1.0"
+    "platinum-sw": "PolymerElements/platinum-sw#^2.1.0",
+    "marked-element": "PolymerElements/marked-element#^2.4.0"
   }
 }
