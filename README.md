@@ -47,5 +47,8 @@ PolymerJS for Intermediate Level
 #### gold-cc-input
 > `bower install --save PolymerElements/gold-cc-input`
 
+#### neon-animation
+> `bower install --save PolymerElements/neon-animation`
+
 ## Creating Reusable Element
 ## Testing and Publishing a Reusable Element
