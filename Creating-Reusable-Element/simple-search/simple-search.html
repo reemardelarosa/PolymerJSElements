@@ -3,7 +3,43 @@
 <link rel="import" href="../paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../iron-a11y-keys/iron-a11y-keys.html">
 <link rel="import" href="simple-search-styles.html">
+<!-- 
+    ### Status
+[![Build Status](https://travis-ci.org/bstavroulakis/simple-search.svg?branch=master)](https://travis-ci.org/reemardelarosa/simple-search)
 
+### General Info `<simple-search>`
+
+`<simple-search>` shows a search input area on your page.
+
+To use, insert `<simple-search>` in the body:
+```html
+    <body>
+      <simple-search></simple-search>
+```
+Example:
+
+To show the search 
+```html
+    <body>
+      <simple-search static-open></simple-search>
+``` 
+
+### Documentation Page
+
+http://reemardelarosa.github.io/simple-search/components/simple-search/
+
+### Demo Page
+
+http://reemardelarosa.github.io/simple-search/components/simple-search/demo/
+
+### Styling
+The following custom properties and mixins are available for styling:
+Custom property | Description | Default
+
+----------------------------|--------------------------------------------|----------
+
+`--search-primary-color` | The color of the buttons | `#303F9F`
+ -->
 <dom-module id="simple-search">
     <template>
         <style include="simple-search-styles"></style>
@@ -35,26 +71,39 @@
     Polymer({
         is: 'simple-search',
         properties: {
+            /** If the search area is visible or not */
             isOpen: {
                 type: Boolean,
                 value: false,
                 observer: "_isOpenChanged"
             },
+            /** If this is true the search area will always show. Can be set with the static-open attribute*/
             staticOpen: {
                 type: Boolean,
                 value: false
             },
+            /** The class once the state isOpen is set to true */
             _toggleClass: {
                 type: String,
                 value: ""
             }
         },
+        /**
+         * @desc Toggle class `opened`
+         *
+         * @return {Void}
+         */
         _isOpenChanged: function() {
             this._toggleClass = "";
             if (this.isOpen) {
                 this._toggleClass = "opened";
             }
         },
+        /**
+         * @desc Toggle the search area
+         *
+         * @return {Void}
+         */
         toggle: function() {
             this.set('isOpen', !this.isOpen);
             if (this.isOpen) {
@@ -62,6 +111,11 @@
                 this.$$("#searchInput").focus();
             }
         },
+        /**
+         * @desc Fire the search event
+         *
+         * @return {Void}
+         */
         searchAction: function() {
             this.fire("search", this.$$("#searchInput").value);
         },
