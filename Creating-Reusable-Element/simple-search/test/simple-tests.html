@@ -31,8 +31,8 @@
                 element.addEventListener("search", function(e) {
                     assert.equal(e.detail, "hello")
                 });
-                element.querySelector("#searchInput").value = "hello";
-                element.querySelector(".trigger-search paper-icon-button").click();
+                Polymer.dom(element.root).querySelector("#searchInput").value = "hello";
+                Polymer.dom(element.root).querySelector(".trigger-search paper-icon-button").click();
                 done();
             });
         });
